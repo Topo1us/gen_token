@@ -27,9 +27,6 @@ def start():
                     break
             except:
                 print('[-]',token)
-                l=open(u"asces_token.txt", 'a')
-                l.write(token+'\n')
-                l.close()
             if x>99:
                 token='88a1c50a96a9a8ee8bb6ad16d64e14e4'
                 api=QApi(token=token,phone=phone)
@@ -39,7 +36,4 @@ def start():
                     start()
     else:
         print('жепа')
-try:
-    start()
-except:
-    os.system(r'python C:\Users\ender\Desktop\cikl.py')
+start()
